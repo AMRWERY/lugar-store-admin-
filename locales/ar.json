@@ -119,62 +119,6 @@
     "banners": "لافتات",
     "hot_deals": "عروض ساخنة"
   },
-  "footer": {
-    "contact_us": "اتصل بنا",
-    "call_us": "اتصل بنا",
-    "damietta": "دمياط",
-    "home": "الصفحة الرئيسية",
-    "products": "المنتجات",
-    "factory_damietta_dam_road_angar_logar_furniture": "المصنع دمياط طريق السد هنجر لوجار لأثاث",
-    "damietta_exhibition_port_said_road_behind_al_baqari_cars": "معرض دمياط طريق بورسعيد خلف البقري للسيارات",
-    "fifth_settlement_lotus_exhibition_iin_front_of_platinum_club_next_to_skyline_school": "معرض التجمع الخامس اللوتس امام نادي بلاتينيوم بجوار مدرسه سكاي لاين",
-    "quick_links": "روابط سريعه",
-    "categories": "الفئات",
-    "you_call_us": "اتصل بنا"
-  },
-  "home": {
-    "coming_soon": "قريبًا",
-    "new_products": "منتجات جديدة",
-    "sofa": "أريكة",
-    "chairs": "كراسي",
-    "bed_rooms": "غرف النوم",
-    "living_rooms": "غرف المعيشة",
-    "dining_rooms": "غرف الطعام",
-    "le": "ج م",
-    "interior_design_in_home": "التصميم الداخلي في المنزل",
-    "summer_sale": "تخفيضات الصيف",
-    "top_seller": "الأكثر مبيعًا",
-    "customer_choice": "اختيار العملاء",
-    "24h_delivery_items": "منتجات للتوصيل خلال 24 ساعة",
-    "special_offers": "عروض خاصة",
-    "cash_on_delivery": "الدفع عند الاستلام",
-    "45_Day_return": "أستلام خلال 45 يومًا",
-    "shop_with_confidence": "تسوق بثقة",
-    "guarantee": "ضمان",
-    "5_years_warranty": "ضمان لمدة 5 سنوات"
-  },
-  "cart": {
-    "your_cart_is_currently_empty": "عربتك فارغة حاليًا.",
-    "continue_shopping": "مواصلة التسوق",
-    "your_cart": "عربة التسوق الخاصة بك",
-    "quantity": "الكمية:",
-    "subtotal": "الإجمالي الفرعي"
-  },
-  "checkout": {
-    "delivery_details": "تفاصيل التسليم",
-    "subtotal": "الإجمالي الفرعي",
-    "savings": "التوفير",
-    "total": "الإجمالي"
-  },
-  "order_summary": {
-    "order_summary": "ملخص الطلب",
-    "order_number": "رقم الطلب:",
-    "category": "الفئة:",
-    "subtotal": "المجموع الفرعي",
-    "savings": "التوفير",
-    "total": "الإجمالي",
-    "order_details": "تفاصيل الطلب"
-  },
   "dashboard": {
     "orders": "الطلبات",
     "email": "البريد الإلكتروني",
@@ -253,10 +197,6 @@
     "exclusive_special_offers": "عروض خاصة حصرية",
     "special_offer": "عرض خاص",
     "product_information": "معلومات المنتج"
-  },
-  "contact_us": {
-    "get_in_touch": "تواصل معنا",
-    "fill_in_the_form_to_start_a_conversation": "املأ النموذج لبدء محادثة"
   },
   "breadcrumb": {
     "home": "الصفحة الرئيسية",

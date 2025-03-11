@@ -32,7 +32,7 @@
                       <span class="block font-normal text-gray-400">{{ $t('form.attach_your_files_here') }}</span>
                     </div>
                   </div>
-                  <input type="file" class="w-full h-full opacity-0" @change="uploadFile">
+                  <input type="file" ref="fileInput" class="w-full h-full opacity-0" @change="uploadFile">
                 </div>
               </div>
             </div>
@@ -90,50 +90,23 @@ onMounted(() => {
   }
 });
 
-async function uploadFile() {
-  if (!fileInput.value) {
-    // console.error("File input element not found");
-    return;
-  }
-  const file = fileInput.value.files[0];
-  if (!file) {
-    alert('Please select a file.');
-    return;
-  }
+async function uploadFile(event) {
+  const file = event.target.files[0];
+  if (!file) return;
   const formData = new FormData();
   formData.append('fileToUpload', file);
   try {
-    const config = useRuntimeConfig();
-    const uploadEndpoint = "https://lugarstore.com/upload.php";
-    const response = await fetch(uploadEndpoint, {
+    const response = await fetch("https://lugarstore.com/upload.php", {
       method: 'POST',
       body: formData
     });
     const result = await response.json();
-    const responseEl = document.getElementById('response');
-    if (responseEl) {
-      responseEl.innerText = JSON.stringify(result, null, 2);
-    }
     if (result.success) {
-      triggerToast({
-        title: t('toast.great'),
-        message: t('toast.image_uploaded_successfully'),
-        type: 'success',
-        icon: 'fa-solid fa-circle-check',
-      });
       uploadedImageUrl.value = result.file_url;
       previewImage.value = result.file_url;
-    } else {
-      alert('Error: ' + result.message);
     }
   } catch (error) {
-    // console.error('Error uploading file:', error);
-    triggerToast({
-      title: t('toast.error'),
-      message: t('toast.faield_to_upload_image'),
-      type: 'error',
-      icon: 'fa-solid fa-triangle-exclamation',
-    });
+    console.error(error)
   }
 }
 
@@ -146,10 +119,12 @@ const handleUpdateCategory = () => {
   const updatedData = {
     title: newCategoryTitle.value,
     titleAr: newCategoryTitleAr.value,
-    imgOne: uploadedImageUrl.value,
+    imgOne: uploadedImageUrl.value || store.currentCategory.imgOne,
   };
   store
     .updateCategory(categoryId, updatedData)
+   store.fetchCategoryDetails(categoryId)
+  // previewImage.value = store.currentCategory.imgOne
     .then(() => {
       triggerToast({
         title: t('toast.great'),
@@ -160,7 +135,7 @@ const handleUpdateCategory = () => {
       return store.fetchCategoryDetails(categoryId);
     })
     .then(() => {
-      // Optionally, additional processing after fetching category details can be added here.
+      // console.log('hello world!')
     })
     .catch((error) => {
       // console.error("Error updating category:", error);

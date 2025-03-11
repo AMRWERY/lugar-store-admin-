@@ -119,62 +119,6 @@
     "banners": "Banners",
     "hot_deals": "Hot Deals"
   },
-  "footer": {
-    "contact_us": "Contact Us",
-    "call_us": "Call us",
-    "damietta": "Damietta",
-    "home": "Home",
-    "products": "Products",
-    "factory_damietta_dam_road_angar_logar_furniture": "Factory Damietta Dam Road Hangar Logar Furniture",
-    "damietta_exhibition_port_said_road_behind_al_baqari_cars": "Damietta Exhibition, Port Said Road, behind Al-Baqari Cars",
-    "fifth_settlement_lotus_exhibition_iin_front_of_platinum_club_next_to_skyline_school": "Fifth Settlement Lotus Exhibition, in front of Platinum Club, next to Skyline School",
-    "quick_links": "Quick Links",
-    "categories": "Categories",
-    "you_call_us": "You Call Us"
-  },
-  "home": {
-    "coming_soon": "Coming Soon",
-    "new_products": "New Products",
-    "sofa": "Sofa",
-    "chairs": "Chairs",
-    "bed_rooms": "Bed Rooms",
-    "living_rooms": "Living Rooms",
-    "dining_rooms": "Dining Rooms",
-    "le": "LE",
-    "interior_design_in_home": "INTERIOR DESIGN IN HOME",
-    "summer_sale": "Summer Sale",
-    "top_seller": "Top Sale",
-    "customer_choice": "Customer Choice",
-    "24h_delivery_items": "24h Delivery items",
-    "special_offers": "Special Offers",
-    "cash_on_delivery": "Cash on Delivery",
-    "45_Day_return": "45-Day Receive",
-    "shop_with_confidence": "Shop with Confidence",
-    "guarantee": "Guarantee",
-    "5_years_warranty": "5 years Warranty"
-  },
-  "cart": {
-    "your_cart_is_currently_empty": "Your cart is currently empty.",
-    "continue_shopping": "Continue Shopping",
-    "your_cart": "Your Cart",
-    "quantity": "Quantity:",
-    "subtotal": "Subtotal"
-  },
-  "checkout": {
-    "delivery_details": "Delivery Details",
-    "subtotal": "Subtotal",
-    "savings": "Savings",
-    "total": "Total"
-  },
-  "order_summary": {
-    "order_summary": "Order Summary",
-    "order_number": "Order Number:",
-    "category": "Category:",
-    "subtotal": "Subtotal",
-    "savings": "Savings",
-    "total": "Total",
-    "order_details": "Order Details"
-  },
   "dashboard": {
     "orders": "Orders",
     "email": "Email",
@@ -253,10 +197,6 @@
     "exclusive_special_offers": "Exclusive Special Offers",
     "special_offer": "Special Offer",
     "product_information": "Product Information"
-  },
-  "contact_us": {
-    "get_in_touch": "Get in touch",
-    "fill_in_the_form_to_start_a_conversation": "Fill in the form to start a conversation"
   },
   "breadcrumb": {
     "home": "Home",
