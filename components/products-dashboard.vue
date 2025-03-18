@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <div class="flex justify-center mt-10">
+      <div class="flex items-center justify-center mt-10">
         <!-- pagination component -->
         <pagination :total-pages="totalPages" :current-page="currentPage" @page-changed="onPageChanged" />
       </div>
